@@ -16,7 +16,7 @@
 # --- end cisst license ---
 
 # To find FindMicroScribe.cmake
-set (CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${cisstLibs_SOURCE_DIR}/cmake)
+set (CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/code)
 
 find_package(MicroScribe REQUIRED)
 
