@@ -1,5 +1,5 @@
 #
-# $Id: FindMicroScribe.cmake 3034 2011-10-09 01:53:36Z adeguet1 $
+# $Id$
 #
 # Author(s):  Min Yang Jung
 # Created on: 2011-10-06

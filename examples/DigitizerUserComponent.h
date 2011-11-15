@@ -2,7 +2,7 @@
 /* ex: set filetype=cpp softtabstop=4 shiftwidth=4 tabstop=4 cindent expandtab: */
 
 /*
-  $Id: DigitizerUserComponent.h 2973 2011-09-27 17:30:43Z auneri1 $
+  $Id$
 
   Author(s):  Min Yang Jung
   Created on: 2011-10-07

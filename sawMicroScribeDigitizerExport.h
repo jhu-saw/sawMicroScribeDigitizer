@@ -1,5 +1,5 @@
 /*
-  $Id: sawMicroScribeDigitizerExport.h 2973 2011-09-27 17:30:43Z auneri1 $
+  $Id$
 
   Author(s):  Min Yang Jung
   Created on: 2011-10-06

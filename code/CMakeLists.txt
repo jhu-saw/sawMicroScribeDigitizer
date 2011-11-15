@@ -1,5 +1,5 @@
 #
-# $Id: CMakeLists.txt 3035 2011-10-09 03:36:38Z pkazanz1 $
+# $Id$
 #
 # Author(s):  Min Yang Jung
 # Created on: 2011-10-06

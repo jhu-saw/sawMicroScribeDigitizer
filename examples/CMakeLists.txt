@@ -1,5 +1,5 @@
 #
-# $Id: CMakeLists.txt 2856 2011-08-23 15:12:17Z adeguet1 $
+# $Id$
 #
 # Author(s):  Min Yang Jung
 # Created on: 2011-10-06
