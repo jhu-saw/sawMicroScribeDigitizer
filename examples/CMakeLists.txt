@@ -17,8 +17,8 @@
 
 
 # create a list of libraries needed for this project
-set (REQUIRED_CISST_LIBRARIES cisstCommon 
-                              cisstVector 
+set (REQUIRED_CISST_LIBRARIES cisstCommon
+                              cisstVector
                               cisstOSAbstraction
                               cisstMultiTask
                               cisstFLTK)
@@ -32,7 +32,7 @@ if (cisst_FOUND_AS_REQUIRED)
   include (${CISST_USE_FILE})
 
   # sawMicroScribeDigitizer has been compiled within cisst, we should find it automatically
-  find_package (sawMicroScribeDigitizer REQUIRED HINTS "${cisst_saw_BINARY_DIR}/saw/components")
+  cisst_find_saw_component (sawMicroScribeDigitizer REQUIRED)
 
   if (sawMicroScribeDigitizer_FOUND)
 
@@ -41,10 +41,10 @@ if (cisst_FOUND_AS_REQUIRED)
     link_directories (${sawMicroScribeDigitizer_LIBRARY_DIR})
 
     #
-    # Console-based example application 
+    # Console-based example application
     #
-    add_executable (sawMicroScribeDigitizerExample DigitizerUserComponent.h 
-                                                   DigitizerUserComponent.cpp 
+    add_executable (sawMicroScribeDigitizerExample DigitizerUserComponent.h
+                                                   DigitizerUserComponent.cpp
                                                    main.cpp)
 
     # link against non cisst libraries and cisst components
@@ -54,17 +54,17 @@ if (cisst_FOUND_AS_REQUIRED)
     cisst_target_link_libraries (sawMicroScribeDigitizerExample ${REQUIRED_CISST_LIBRARIES})
 
     #
-    # FLTK-based example application 
+    # FLTK-based example application
     #
     # add include paths
     include_directories (${sawMicroScribeDigitizerExampleFLTK_SOURCE_DIR})
 
     fltk_wrap_ui (sawMicroScribeDigitizerExampleFLTK DigitizerExampleUI.fl)
 
-    add_executable (sawMicroScribeDigitizerExampleFLTK DigitizerUserComponent.h 
-                                                       DigitizerUserComponent.cpp 
+    add_executable (sawMicroScribeDigitizerExampleFLTK DigitizerUserComponent.h
+                                                       DigitizerUserComponent.cpp
                                                        DigitizerUserComponentFLTK.h
-                                                       DigitizerUserComponentFLTK.cpp 
+                                                       DigitizerUserComponentFLTK.cpp
                                                        mainFLTK.cpp
                                                        ${sawMicroScribeDigitizerExampleFLTK_FLTK_UI_SRCS}
                                                        )
