@@ -1,5 +1,4 @@
 #
-# $Id$
 #
 # Author(s):  Min Yang Jung
 # Created on: 2011-10-06
